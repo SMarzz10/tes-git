@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyFocus - Catatan Harian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Daily<span>Focus.</span></h1>
+        <p>Rencanakan hari, capai tujuan.</p>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <p id="tanggal"></p>
+            <h2>Halo! Siap produktif hari ini?</h2>
+            <p>Tulis kegiatanmu dan selesaikan satu per satu.</p>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <p>Total Kegiatan</p>
+                <h2 id="total">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Selesai</p>
+                <h2 id="selesai">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Belum Selesai</p>
+                <h2 id="belum">0</h2>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2>Daftar Kegiatan</h2>
+
+            <form id="task-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="Contoh: Belajar JavaScript"
+                    maxlength="100"
+                    required
+                >
+                <button type="submit">+ Tambah</button>
+            </form>
+
+            <ul id="task-list"></ul>
+            <p id="empty-message">Belum ada kegiatan. Tambahkan kegiatan pertamamu!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 DailyFocus. Dibuat untuk belajar web development.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
